@@ -59,6 +59,15 @@ function MapDisplay() {
           placeholder: "example: 10083",
         },
         {
+          layer: structureLayer,
+          searchFields: ["StrucID"],
+          displayField: "StrucID",
+          exactMatch: false,
+          outFields: ["StrucID"],
+          name: "Structure ID",
+          placeholder: "example: MCRP-01-01-ML028",
+        },
+        {
           layer: pierAccessLayer,
           searchFields: ["PierNumber"],
           displayField: "PierNumber",
