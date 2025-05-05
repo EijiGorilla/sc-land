@@ -138,7 +138,7 @@ const StructureChart = () => {
         legendValueText: "{valuePercentTotal.formatNumber('#.')}% ({value})",
         radius: am5.percent(45), // outer radius
         innerRadius: am5.percent(28),
-        scale: 1.5,
+        scale: 1.8,
       })
     );
     pieSeriesRef.current = pieSeries;
@@ -148,7 +148,7 @@ const StructureChart = () => {
     let inner_label = pieSeries.children.push(
       am5.Label.new(root, {
         text: "[#ffffff]{valueSum}[/]\n[fontSize: 8px; #d3d3d3; verticalAlign: super]STRUCTURES[/]",
-        fontSize: 25,
+        fontSize: "1.2rem",
         centerX: am5.percent(50),
         centerY: am5.percent(40),
         populateText: true,

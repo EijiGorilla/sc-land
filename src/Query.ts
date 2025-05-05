@@ -428,8 +428,8 @@ export async function generateHandedOverAreaData() {
 
 export async function generateStructureData(municipal: any, barangay: any) {
   // Query
-  const queryMunicipality = `${municipalityField} = '` + municipal + "'";
-  const queryBarangay = `${barangayField} = '` + barangay + "'";
+  const queryMunicipality = "Municipality = '" + municipal + "'";
+  const queryBarangay = "Barangay = '" + barangay + "'";
   const queryMunicipalBarangay = queryMunicipality + " AND " + queryBarangay;
   const queryField = structureStatusField + " IS NOT NULL";
 
@@ -509,57 +509,10 @@ export async function generateStrucNumber() {
   });
 }
 
-export async function generateStrucMoaData(municipal: any, barangay: any) {
-  // Query
-  const queryMunicipality = `${municipalityField} = '` + municipal + "'";
-  const queryBarangay = `${barangayField} = '` + barangay + "'";
-  const queryMunicipalBarangay = queryMunicipality + " AND " + queryBarangay;
-  const queryField = structureMoaField + " IS NOT NULL";
-
-  var total_count = new StatisticDefinition({
-    onStatisticField: structureMoaField,
-    outStatisticFieldName: "total_count",
-    statisticType: "count",
-  });
-
-  var query = structureLayer.createQuery();
-  query.outFields = [structureMoaField];
-  query.outStatistics = [total_count];
-  query.orderByFields = [structureMoaField];
-  query.groupByFieldsForStatistics = [structureMoaField];
-
-  if (municipal && !barangay) {
-    query.where = queryField + " AND " + queryMunicipality;
-  } else if (barangay) {
-    query.where = queryField + " AND " + queryMunicipalBarangay;
-  }
-
-  return structureLayer.queryFeatures(query).then((response: any) => {
-    var stats = response.features;
-    const data = stats.map((result: any, index: any) => {
-      const attributes = result.attributes;
-      const status_id = attributes.MoA;
-      const count = attributes.total_count;
-      return Object.assign({
-        category: structureMoaStatus[status_id - 1],
-        value: count,
-      });
-    });
-
-    const data1: any = [];
-    structureMoaStatus.map((status: any, index: any) => {
-      const find = data.find((emp: any) => emp.category === status);
-      const value = find === undefined ? 0 : find?.value;
-      data1.push({ category: status, value: value });
-    });
-    return data1;
-  });
-}
-
 export async function generateNloData(municipal: any, barangay: any) {
   // Query
-  const queryMunicipality = `${municipalityField} = '` + municipal + "'";
-  const queryBarangay = `${barangayField} = '` + barangay + "'";
+  const queryMunicipality = "Municipality = '" + municipal + "'";
+  const queryBarangay = "Barangay = '" + barangay + "'";
   const queryMunicipalBarangay = queryMunicipality + " AND " + queryBarangay;
   const queryField = nloStatusField + " IS NOT NULL";
 
