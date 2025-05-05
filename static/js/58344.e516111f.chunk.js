@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunksc_land=self.webpackChunksc_land||[]).push([[58344],{58344:(e,t,r)=>{r.r(t),r.d(t,{default:()=>h});var s=r(35143),a=r(91967),o=r(46053),c=(r(81806),r(76460),r(47249),r(85842));let p=class extends a.default{constructor(e){super(e),this.searchQuery="",this.typeCategoryFilter="both"}};(0,s._)([(0,o.MZ)()],p.prototype,"searchQuery",void 0),(0,s._)([(0,o.MZ)()],p.prototype,"typeCategoryFilter",void 0),p=(0,s._)([(0,c.$)("esri.rest.knowledgeGraph.GraphSearch")],p);const h=p}}]);
+//# sourceMappingURL=58344.e516111f.chunk.js.map

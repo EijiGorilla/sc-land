@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunksc_land=self.webpackChunksc_land||[]).push([[57385],{57385:(n,s,a)=>{a.r(s),a.d(s,{loadFont:()=>e});var c=a(85504);function e(n){return(0,c.Al)(n)}}}]);
+//# sourceMappingURL=57385.1f63af09.chunk.js.map

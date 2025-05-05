@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunksc_land=self.webpackChunksc_land||[]).push([[68350],{68350:(e,t,s)=>{s.r(t),s.d(t,{execute:()=>c,isAsync:()=>r});var i=s(11217),n=s(52847),a=s(81130);function c(e){let{templatePart:t,shape:s,edits:c,relationships:r,mode:l}=e;if(!(0,a.Rg)(s))return;const o=(0,n.xI)(s);for(const n of o){if("digitizing"===l&&c.length>a.Cg)break;(0,i.fS)({templatePart:t,shape:n,edits:c,relationships:r,mode:l})}}const r=!1}}]);
+//# sourceMappingURL=68350.2053daf6.chunk.js.map
