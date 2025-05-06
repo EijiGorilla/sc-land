@@ -138,7 +138,7 @@ const StructureChart = () => {
         legendValueText: "{valuePercentTotal.formatNumber('#.')}% ({value})",
         radius: am5.percent(45), // outer radius
         innerRadius: am5.percent(28),
-        scale: 1.8,
+        scale: 1.7,
       })
     );
     pieSeriesRef.current = pieSeries;
