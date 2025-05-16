@@ -1413,7 +1413,7 @@ const defaultPierAccessLabel = new LabelClass({
     },
   }),
   labelExpressionInfo: {
-    expression: "$feature.PIER",
+    expression: "$feature.PierNumber",
     //'DefaultValue($feature.GeoTechName, "no data")'
     //"IIF($feature.Score >= 13, '', '')"
     //value: "{Type}"
