@@ -47,6 +47,7 @@ function MapDisplay() {
       arcgisScene.map.add(pierHeadColumnLayer);
       arcgisScene.map.add(somco_fense_layer);
       arcgisScene.map.add(handedOverLotLayer);
+      arcgisScene.map.ground.navigationConstraint = "none";
 
       arcgisSearch.sources = [
         {
