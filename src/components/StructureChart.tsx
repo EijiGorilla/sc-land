@@ -18,6 +18,7 @@ import "@esri/calcite-components/dist/components/calcite-label";
 import { CalciteLabel } from "@esri/calcite-components-react";
 import {
   barangayField,
+  chart_width,
   cutoff_days,
   municipalityField,
   primaryLabelColor,
@@ -381,6 +382,7 @@ const StructureChart = () => {
       <div
         id={chartID}
         style={{
+          width: chart_width,
           height: "62vh",
           backgroundColor: "rgb(0,0,0,0)",
           color: "white",
@@ -388,40 +390,52 @@ const StructureChart = () => {
         }}
       ></div>
       {/* Permit-to-Enter */}
-      <CalciteLabel>PERMIT-TO-ENTER</CalciteLabel>
-      <CalciteLabel layout="inline">
-        {structureNumber[1] === 0 ? (
-          <b className="permitToEnterNumber" style={{ color: valueLabelColor }}>
-            {structureNumber[0]}% (0)
-            <img
-              src="https://EijiGorilla.github.io/Symbols/Permit-To-Enter.png"
-              alt="Structure Logo"
-              height={"15%"}
-              width={"15%"}
-              style={{
-                marginLeft: "280px",
-                display: "flex",
-                marginTop: "-10%",
-              }}
-            />
-          </b>
-        ) : (
-          <b className="permitToEnterNumber" style={{ color: valueLabelColor }}>
-            {structureNumber[0]}% ({thousands_separators(structureNumber[1])})
-            <img
-              src="https://EijiGorilla.github.io/Symbols/Permit-To-Enter.png"
-              alt="Structure Logo"
-              height={"15%"}
-              width={"15%"}
-              style={{
-                marginLeft: "280px",
-                display: "flex",
-                marginTop: "-10%",
-              }}
-            />
-          </b>
-        )}
-      </CalciteLabel>
+      <div
+        style={{
+          display: "flex",
+          marginTop: "3px",
+          marginLeft: "15px",
+          marginRight: "15px",
+          justifyContent: "space-between",
+        }}
+      >
+        <dl style={{ alignItems: "center", marginLeft: "15px" }}>
+          <dt
+            style={{
+              color: primaryLabelColor,
+              fontSize: "1.1rem",
+            }}
+          >
+            PERMIT-TO-ENTER
+          </dt>
+          <dd
+            style={{
+              color: valueLabelColor,
+              fontSize: "1.9rem",
+              fontWeight: "bold",
+              fontFamily: "calibri",
+              lineHeight: "1.2",
+              margin: "auto",
+            }}
+          >
+            {structureNumber[1] === 0 ? (
+              <span>{structureNumber[0]}% (0)</span>
+            ) : (
+              <span>
+                {structureNumber[0]}% (
+                {thousands_separators(structureNumber[1])})
+              </span>
+            )}
+            {/* {structureNumber[0]}% ({thousands_separators(structureNumber[1])}) */}
+          </dd>
+        </dl>
+        <img
+          src="https://EijiGorilla.github.io/Symbols/Permit-To-Enter.png"
+          alt="Structure Logo"
+          height={"55px"}
+          width={"55px"}
+        />
+      </div>
     </>
   );
 }; // End of lotChartgs

@@ -4,6 +4,9 @@ import { highlightLot } from "./Query";
 import { tunnelAffectedLotLayer } from "./layers";
 const arcgisScene = document.querySelector("arcgis-scene");
 
+// chart width
+export const chart_width = "26vw";
+
 // Updated Dates
 export const updatedDateCategoryNames = [
   "Land Acquisition",

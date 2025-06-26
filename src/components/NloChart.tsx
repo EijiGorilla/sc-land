@@ -21,6 +21,7 @@ import {
   barangayField,
   updatedDateCategoryNames,
   cutoff_days,
+  chart_width,
 } from "../uniqueValues";
 import { MyContext } from "../App";
 import { ArcgisScene } from "@arcgis/map-components/dist/components/arcgis-scene";
@@ -371,6 +372,7 @@ const NloChart = memo(() => {
       <div
         id={chartID}
         style={{
+          width: chart_width,
           height: "75vh",
           backgroundColor: "rgb(0,0,0,0)",
           color: "white",

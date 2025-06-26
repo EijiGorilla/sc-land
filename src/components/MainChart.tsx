@@ -38,7 +38,7 @@ function MainChart() {
   return (
     <>
       <CalciteTabs
-        style={{ width: "37%" }}
+        // style={{ width: "37%" }}
         slot="panel-end"
         layout="center"
         scale="m"

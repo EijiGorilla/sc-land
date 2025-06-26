@@ -22,10 +22,10 @@ import {
   lotStatusField,
   municipalityField,
   lotStatusQuery,
+  chart_width,
 } from "../uniqueValues";
 import { MyContext } from "../App";
 import { ArcgisScene } from "@arcgis/map-components/dist/components/arcgis-scene";
-
 import "../index.css";
 import "../App.css";
 
@@ -116,7 +116,12 @@ const ExpropriationList = () => {
 
   return (
     <>
-      <CalciteList id="result-list" label="exproListLabel" displayMode="nested">
+      <CalciteList
+        id="result-list"
+        label="exproListLabel"
+        displayMode="nested"
+        style={{ width: chart_width }}
+      >
         {exproItem && // Extract unique objects from the array
           exproItem
             .filter(

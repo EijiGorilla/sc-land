@@ -23,6 +23,7 @@ import "@esri/calcite-components/dist/components/calcite-checkbox";
 import { CalciteLabel, CalciteCheckbox } from "@esri/calcite-components-react";
 import {
   barangayField,
+  chart_width,
   cutoff_days,
   lotPriorityField,
   lotStatusField,
@@ -453,11 +454,12 @@ const LotChart = () => {
       <div
         id={chartID}
         style={{
+          width: chart_width,
           height: "60vh",
           backgroundColor: "rgb(0,0,0,0)",
           color: "white",
           marginTop: "8%",
-          marginBottom: "10%",
+          marginBottom: "2.5%",
         }}
       ></div>
 
@@ -468,7 +470,7 @@ const LotChart = () => {
           marginLeft: "15px",
           marginRight: "15px",
           justifyContent: "space-between",
-          marginBottom: "20px",
+          // marginBottom: "20px",
         }}
       >
         <div
