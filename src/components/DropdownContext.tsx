@@ -130,6 +130,7 @@ export function DropdownListDisplay({
           fontSize: "0.85rem",
           margin: "auto",
           paddingRight: "0.5rem",
+          paddingLeft: "10px",
         }}
       >
         Barangay
