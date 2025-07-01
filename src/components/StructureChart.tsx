@@ -386,7 +386,7 @@ const StructureChart = () => {
           height: "62vh",
           backgroundColor: "rgb(0,0,0,0)",
           color: "white",
-          marginBottom: "7%",
+          marginBottom: "9px",
         }}
       ></div>
       {/* Permit-to-Enter */}

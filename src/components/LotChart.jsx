@@ -459,7 +459,7 @@ const LotChart = () => {
           backgroundColor: "rgb(0,0,0,0)",
           color: "white",
           marginTop: "8%",
-          marginBottom: "2.5%",
+          marginBottom: "7px",
         }}
       ></div>
 
