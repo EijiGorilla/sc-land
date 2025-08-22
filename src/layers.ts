@@ -1732,7 +1732,7 @@ export const landOptimizationLayer = new FeatureLayer({
   definitionExpression: "ForNonAcqui = 1",
   popupEnabled: false,
   labelsVisible: false,
-  title: "Land Optimization",
+  title: "For Land Optimization",
   elevationInfo: {
     mode: "on-the-ground",
   },
