@@ -336,6 +336,7 @@ export async function defineActions(event) {
 
   item.title === "Chainage" ||
   item.title === "Substation" ||
+  item.title === "Future Track" ||
   item.title === "NLO/LO Ownership (Structure)" ||
   item.title === "Super Urgent Lot" ||
   item.title === "Handed-Over (public + private)" ||

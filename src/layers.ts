@@ -1767,6 +1767,32 @@ export const substationLayer = new FeatureLayer({
   },
 });
 
+/* For SC Future Track */
+const scFutureTrack = new SimpleRenderer({
+  symbol: new SimpleLineSymbol({
+    color: "#C2C7FC",
+    width: "3px",
+    style: "solid",
+  }),
+});
+
+export const scFutureTrackLayer = new FeatureLayer({
+  portalItem: {
+    id: "a0ec0ab1c19c4927b0934b524e398a6a",
+    portal: {
+      url: "https://gis.railway-sector.com/portal",
+    },
+  },
+  layerId: 64,
+  renderer: scFutureTrack,
+  popupEnabled: false,
+  labelsVisible: false,
+  title: "Future Track",
+  elevationInfo: {
+    mode: "on-the-ground",
+  },
+});
+
 // Group layers //
 export const alignmentGroupLayer = new GroupLayer({
   title: "Alignment",
@@ -1779,6 +1805,7 @@ export const alignmentGroupLayer = new GroupLayer({
     cp_break_lines,
     pierHeadColumnLayer,
     substationLayer,
+    scFutureTrackLayer,
   ],
 }); //map.add(alignmentGroupLayer, 0);
 
