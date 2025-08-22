@@ -1738,6 +1738,35 @@ export const landOptimizationLayer = new FeatureLayer({
   },
 });
 
+/* For SC Substation */
+const scSubstationRenderer = new SimpleRenderer({
+  symbol: new SimpleFillSymbol({
+    color: [115, 178, 255],
+    style: "backward-diagonal",
+    outline: {
+      color: "#004DA8",
+      width: 1.5,
+    },
+  }),
+});
+
+export const substationLayer = new FeatureLayer({
+  portalItem: {
+    id: "fd0fd77c428b4fae8f47ac46b26614ec",
+    portal: {
+      url: "https://gis.railway-sector.com/portal",
+    },
+  },
+  layerId: 61,
+  renderer: scSubstationRenderer,
+  popupEnabled: false,
+  labelsVisible: false,
+  title: "Substation",
+  elevationInfo: {
+    mode: "on-the-ground",
+  },
+});
+
 // Group layers //
 export const alignmentGroupLayer = new GroupLayer({
   title: "Alignment",
@@ -1749,6 +1778,7 @@ export const alignmentGroupLayer = new GroupLayer({
     prow_tunnelLayer,
     cp_break_lines,
     pierHeadColumnLayer,
+    substationLayer,
   ],
 }); //map.add(alignmentGroupLayer, 0);
 
