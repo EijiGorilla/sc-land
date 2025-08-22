@@ -338,6 +338,7 @@ export async function defineActions(event) {
   item.title === "NLO/LO Ownership (Structure)" ||
   item.title === "Super Urgent Lot" ||
   item.title === "Handed-Over (public + private)" ||
+  item.title === "Land Optimization" ||
   item.title === "Tunnel Affected" ||
   item.title === "Structure" ||
   item.title === "NLO (Non-Land Owner)" ||

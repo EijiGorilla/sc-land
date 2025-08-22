@@ -1702,6 +1702,42 @@ export const cp_break_lines = new FeatureLayer({
   },
 });
 
+/* For Land Optimization */
+const landOptimizationRenderer = new UniqueValueRenderer({
+  field: "ForNonAcqui",
+  uniqueValueInfos: [
+    {
+      value: 1,
+      label: "Yes",
+      symbol: new SimpleFillSymbol({
+        color: [0, 255, 255, 0.3], //[0, 255, 255, 0.1], #00ffff
+        outline: new SimpleLineSymbol({
+          color: "#00ffff",
+          width: "4px",
+        }),
+      }),
+    },
+  ],
+});
+
+export const landOptimizationLayer = new FeatureLayer({
+  portalItem: {
+    id: "99500faf0251426ea1df934a739faa6f",
+    portal: {
+      url: "https://gis.railway-sector.com/portal",
+    },
+  },
+  layerId: 1,
+  renderer: landOptimizationRenderer,
+  definitionExpression: "ForNonAcqui = 1",
+  popupEnabled: false,
+  labelsVisible: false,
+  title: "Land Optimization",
+  elevationInfo: {
+    mode: "on-the-ground",
+  },
+});
+
 // Group layers //
 export const alignmentGroupLayer = new GroupLayer({
   title: "Alignment",
@@ -1727,7 +1763,13 @@ export const lotGroupLayer = new GroupLayer({
   title: "Land",
   visible: true,
   visibilityMode: "independent",
-  layers: [lotLayer, tunnelAffectedLotLayer, pnrLayer, accessibleLotAreaLayer],
+  layers: [
+    lotLayer,
+    tunnelAffectedLotLayer,
+    pnrLayer,
+    accessibleLotAreaLayer,
+    landOptimizationLayer,
+  ],
 });
 
 export const ngcp6_groupLayer = new GroupLayer({
@@ -1744,3 +1786,5 @@ export const ngcp7_groupLayer = new GroupLayer({
   visibilityMode: "independent",
   layers: [ngcp_line7, ngcp_pole7, ngcp_working_area7],
 });
+
+//###################################
