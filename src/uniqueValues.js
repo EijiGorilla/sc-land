@@ -199,10 +199,7 @@ export const nloStatusQuery = nloStatusLabel.map((status, index) => {
 
 // Structure Ownership
 export const structureOwnershipStatusField = "Status";
-export const structureOwnershipStatusLabel = [
-  "LO (Land Owner)",
-  "NLO (Non-Land Owner)",
-];
+export const structureOwnershipStatusLabel = ["LO (Land Owner)", "Households"];
 export const structureOwnershipColor = [
   [128, 128, 128, 1],
   [128, 128, 128, 1],
@@ -337,13 +334,13 @@ export async function defineActions(event) {
   item.title === "Chainage" ||
   item.title === "Substation" ||
   item.title === "Future Track" ||
-  item.title === "NLO/LO Ownership (Structure)" ||
+  item.title === "Households Ownership (Structure)" ||
   item.title === "Super Urgent Lot" ||
   item.title === "Handed-Over (public + private)" ||
   item.title === "For Land Optimization" ||
   item.title === "Tunnel Affected" ||
   item.title === "Structure" ||
-  item.title === "NLO (Non-Land Owner)" ||
+  item.title === "Households" ||
   item.title === "Occupancy (Structure)" ||
   item.title === "Proposed Pole Working Areas" ||
   item.title === "Proposed/Recorded NGCP Lines" ||
