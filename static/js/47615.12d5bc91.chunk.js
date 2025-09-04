@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunksc_land=self.webpackChunksc_land||[]).push([[47615],{47615:(e,n,s)=>{function c(e){throw new Error("Not yet implemented")}s.r(n),s.d(n,{execute:()=>c,isAsync:()=>t});const t=!1}}]);
-//# sourceMappingURL=47615.12d5bc91.chunk.js.map

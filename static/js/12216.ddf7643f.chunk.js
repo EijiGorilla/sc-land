@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunksc_land=self.webpackChunksc_land||[]).push([[12216],{89835:(s,e,t)=>{t.r(e),t.d(e,{default:()=>c});var r=t(35143),l=t(42553),u=t(46053),a=(t(81806),t(76460),t(47249),t(85842));let n=class extends l.A{constructor(){super(...arguments),this.url=null}};(0,r._)([(0,u.MZ)({json:{name:"imageURL",write:!0}})],n.prototype,"url",void 0),n=(0,r._)([(0,a.$)("esri.rest.support.ImageUrlResult")],n);const c=n}}]);
-//# sourceMappingURL=12216.ddf7643f.chunk.js.map
