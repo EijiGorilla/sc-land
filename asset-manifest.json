@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/sc-land/static/css/main.c4d9311e.css",
-    "main.js": "/sc-land/static/js/main.fec3f98a.js",
+    "main.js": "/sc-land/static/js/main.d6e09421.js",
     "static/js/22475.51bf1f79.chunk.js": "/sc-land/static/js/22475.51bf1f79.chunk.js",
     "static/js/58497.95549155.chunk.js": "/sc-land/static/js/58497.95549155.chunk.js",
     "static/js/65665.aaa3deda.chunk.js": "/sc-land/static/js/65665.aaa3deda.chunk.js",
@@ -532,7 +532,7 @@
     "static/js/59031.529327af.chunk.js": "/sc-land/static/js/59031.529327af.chunk.js",
     "index.html": "/sc-land/index.html",
     "main.c4d9311e.css.map": "/sc-land/static/css/main.c4d9311e.css.map",
-    "main.fec3f98a.js.map": "/sc-land/static/js/main.fec3f98a.js.map",
+    "main.d6e09421.js.map": "/sc-land/static/js/main.d6e09421.js.map",
     "22475.51bf1f79.chunk.js.map": "/sc-land/static/js/22475.51bf1f79.chunk.js.map",
     "58497.95549155.chunk.js.map": "/sc-land/static/js/58497.95549155.chunk.js.map",
     "65665.aaa3deda.chunk.js.map": "/sc-land/static/js/65665.aaa3deda.chunk.js.map",
@@ -1001,6 +1001,6 @@
   },
   "entrypoints": [
     "static/css/main.c4d9311e.css",
-    "static/js/main.fec3f98a.js"
+    "static/js/main.d6e09421.js"
   ]
 }
