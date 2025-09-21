@@ -278,19 +278,19 @@ export async function defineActions(event) {
   }
 
   // NGCP Site 7
-  if (item.title === "Proposed Pole Working Areas") {
-    item.actionsSections = new Collection([
-      new Collection([
-        new ActionButton({
-          title: "Zoom to Area",
-          icon: "zoom-in-fixed",
-          id: "full-extent-ngcpwa7",
-        }),
-      ]),
-    ]);
+  // if (item.title === "Proposed Pole Working Areas") {
+  //   item.actionsSections = new Collection([
+  //     new Collection([
+  //       new ActionButton({
+  //         title: "Zoom to Area",
+  //         icon: "zoom-in-fixed",
+  //         id: "full-extent-ngcpwa7",
+  //       }),
+  //     ]),
+  //   ]);
 
-    // highlightLot(ngcp_tagged_structureLayer);
-  }
+  //   // highlightLot(ngcp_tagged_structureLayer);
+  // }
 
   if (item.title === "Proposed/Recorded NGCP Lines") {
     item.actionsSections = new Collection([

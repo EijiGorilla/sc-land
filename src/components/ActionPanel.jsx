@@ -182,14 +182,6 @@ function ActionPanel() {
                       console.error(error);
                     }
                   });
-              } else if (id === "full-extent-ngcpwa7") {
-                arcgisScene
-                  ?.goTo(ngcp_working_area7.fullExtent)
-                  .catch((error) => {
-                    if (error.name !== "AbortError") {
-                      console.error(error);
-                    }
-                  });
               } else if (id === "full-extent-ngcpline6") {
                 arcgisScene?.goTo(ngcp_line6.fullExtent).catch((error) => {
                   if (error.name !== "AbortError") {
