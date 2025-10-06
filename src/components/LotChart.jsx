@@ -239,6 +239,7 @@ const LotChart = () => {
       strokeWidth: 0.5,
       strokeOpacity: 1,
       templateField: "sliceSettings",
+      tooltipText: '{category}: {valuePercentTotal.formatNumber("#.")}%',
     });
 
     // Disabling labels and ticksll
@@ -312,6 +313,27 @@ const LotChart = () => {
     });
 
     pieSeries.data.setAll(lotData);
+
+    // Disabling labels and ticksll
+    pieSeries.labels.template.setAll({
+      // fill: am5.color('#ffffff'),
+      // fontSize: '0.5rem',
+      visible: false,
+      scale: 0,
+      // oversizedBehavior: 'wrap',
+      // maxWidth: 65,
+      // text: "{category}: [#C9CC3F; fontSize: 10px;]{valuePercentTotal.formatNumber('#.')}%[/]",
+    });
+
+    // pieSeries.labels.template.set('visible', true);
+    pieSeries.ticks.template.setAll({
+      // fillOpacity: 0.9,
+      // stroke: am5.color('#ffffff'),
+      // strokeWidth: 0.3,
+      // strokeOpacity: 1,
+      visible: false,
+      scale: 0,
+    });
 
     // Legend
     // https://www.amcharts.com/docs/v5/charts/percent-charts/legend-percent-series/
