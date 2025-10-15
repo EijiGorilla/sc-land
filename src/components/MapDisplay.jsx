@@ -42,7 +42,7 @@ function MapDisplay() {
       arcgisScene.map.add(structureLayer);
       arcgisScene.map.add(nloLoOccupancyGroupLayer);
       arcgisScene.map.add(alignmentGroupLayer);
-      arcgisScene.map.add(prowLayer);
+      // arcgisScene.map.add(prowLayer);
       arcgisScene.map.add(stationLayer);
       // arcgisScene.map.add(pierHeadColumnLayer);
       arcgisScene.map.add(somco_fense_layer);
