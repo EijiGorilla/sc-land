@@ -249,6 +249,9 @@ export const meralco_site1_prowLayer = new FeatureLayer({
   },
   title: "Meralco Site 1 Additional PROW",
   popupEnabled: false,
+  elevationInfo: {
+    mode: "on-the-ground",
+  },
   renderer: prowRenderer,
 });
 
